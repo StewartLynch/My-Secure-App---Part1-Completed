@@ -38,7 +38,7 @@ struct LoginView: View {
         .padding()
         .disabled(loginVM.showProgressView)
         .alert(item: $loginVM.error) { error in
-            Alert(title: Text("Invlid Login"), message: Text(error.localizedDescription))
+            Alert(title: Text("Invalid Login"), message: Text(error.localizedDescription))
         }
     }
 }
